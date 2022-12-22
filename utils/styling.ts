@@ -1,6 +1,7 @@
 export const theme = {
     colours: {
         black: "#373737",
+        grey: "#333333",
         white: "white",
         // Accessibility and forms
         focus: "#4fcd90",
@@ -16,7 +17,7 @@ export const theme = {
             max: 1.125,
         },
     },
-    
+
     // https://www.smashingmagazine.com/2016/05/fluid-typography/
     fluidType: (exp: number) => {
         return `
