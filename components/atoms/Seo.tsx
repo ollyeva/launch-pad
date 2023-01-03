@@ -4,12 +4,12 @@ export default function Seo() {
 
     const data = {
         title: 'Olly Evans - Creative Developer',
-        description: 'I am Olly, a Creative Developer based in Melbourne. Mid Weight developer and designer with my Bachelor in Digital Media, currently looking for new work.',
+        description: 'I\'m Olly, a Creative Developer based in Melbourne. Mid Weight developer and designer with my Bachelor in Digital Media, currently looking for new work.',
         websiteUrl: 'https://ollyevans.xyz/'
     }
 
     return <Head>
-        <title>Olly's Launch Pad</title>
+        <title>Olly&quot;s Launch Pad</title>
         <meta name="title" content={data.title}/>
         <meta name="description" content={data.description}/>
 
