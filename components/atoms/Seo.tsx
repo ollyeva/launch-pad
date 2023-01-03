@@ -9,7 +9,7 @@ export default function Seo() {
     }
 
     return <Head>
-        <title>Olly&quot;s Launch Pad</title>
+        <title>Olly&apos;s Launch Pad</title>
         <meta name="title" content={data.title}/>
         <meta name="description" content={data.description}/>
 
