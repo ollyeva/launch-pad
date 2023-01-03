@@ -38,11 +38,7 @@ const GlobalStyle = createGlobalStyle`
   .h1, .h2, .h3, .h4, .h5, .h6 {
     font-weight: bold;
 
-    a {
-      text-decoration: none;
-    }
-
-    a:hover {
+    a, a:hover {
       text-decoration: none;
     }
   }
@@ -164,10 +160,6 @@ const GlobalStyle = createGlobalStyle`
     font-weight: normal;
   }
 
-  .fieldset {
-    margin: 0.5rem 0;
-  }
-
   .text-input,
   input[type="text"],
   input[type="password"],
@@ -215,8 +207,6 @@ const GlobalStyle = createGlobalStyle`
     font-family: inherit;
   }
 
-  // Select
-
   select {
     // A reset of styles, including removing the default dropdown arrow
     appearance: none;
@@ -239,45 +229,13 @@ const GlobalStyle = createGlobalStyle`
     display: none;
   }
 
-  .fieldset.select {
-    width: 100%;
-    border-bottom: 1px solid;
-    border-radius: 0;
-    padding: 0;
-    margin: 0.5rem 0 1.5rem 0;
-    ${(props: any) => props.theme.fluidType(0)};
-    cursor: pointer;
-    line-height: 1.1;
-    background-color: transparent;
-    grid-template-areas: "select";
-    display: grid;
-    align-items: center;
-    max-width: 15rem;
-
-    &:after {
-      content: "";
-      width: 0.8rem;
-      height: 0.5rem;
-      background-color: ${(props: any) => props.theme.colours.black};
-      clip-path: polygon(100% 0%, 0 0%, 50% 100%);
-      justify-self: end;
-    }
-
-    select,
-    &:after {
-      grid-area: select;
-    }
-  }
-
   .button,
   button,
   input[type="submit"],
   input[type="button"],
   input[type="reset"] {
     display: inline-block;
-
     padding: 0 1rem;
-
     font-family: inherit;
     ${(props: any) => props.theme.fluidType(0)};
     line-height: 2;
@@ -285,7 +243,6 @@ const GlobalStyle = createGlobalStyle`
     white-space: nowrap;
     border: 1px solid;
     border-radius: 2px;
-
     color: inherit;
     background-color: transparent;
 

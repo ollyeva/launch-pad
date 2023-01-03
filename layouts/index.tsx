@@ -1,15 +1,8 @@
 import {ReactNode} from "react";
 import Head from 'next/head'
-import styled, {ThemeProvider} from "styled-components";
+import {ThemeProvider} from "styled-components";
 import {theme} from "../utils/styling";
 import GlobalStyles from "../components/atoms/globalStyles";
-
-const Main = styled.div`
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  min-height: 100vh;
-`
 
 interface ModuleProps {
     children: ReactNode
@@ -26,9 +19,9 @@ export default function Layout({children}: ModuleProps) {
                     <link rel="icon" href="/favicon.ico"/>
                 </Head>
                 <GlobalStyles/>
-                <Main>
+                <main>
                     {children}
-                </Main>
+                </main>
             </>
         </ThemeProvider>
     )

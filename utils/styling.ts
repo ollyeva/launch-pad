@@ -1,7 +1,7 @@
 export const theme = {
     colours: {
-        black: "#373737",
-        grey: "#333333",
+        black: "#000000",
+        grey: "#e7e7e7",
         white: "white",
         // Accessibility and forms
         focus: "#4fcd90",
