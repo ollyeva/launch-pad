@@ -11,7 +11,7 @@ export const theme = {
         min: 16,
         max: 24,
         minScreen: 400,
-        maxScreen: 1200,
+        maxScreen: 800,
         scale: {
             min: 1.067,
             max: 1.125,

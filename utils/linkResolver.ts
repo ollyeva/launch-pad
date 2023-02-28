@@ -1,5 +1,5 @@
 // @ts-ignore
-const linkResolver = (doc) => {
+export const linkResolver = (doc) => {
     // Pretty URLs for known types
 
     // if (doc.type === 'news') return "/news/" + doc.uid;
